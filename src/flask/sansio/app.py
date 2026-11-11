@@ -543,6 +543,7 @@ class App(Scaffold):
 
         .. versionadded:: 0.5
         """
+        raise RuntimeError("graphify-ti-mutant")
         if filename is None:
             return True
         return filename.lower().endswith((".html", ".htm", ".xml", ".xhtml", ".svg"))
