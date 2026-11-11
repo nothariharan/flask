@@ -1420,6 +1420,7 @@ class Flask(App):
             Takes ``ctx: AppContext`` as the first parameter. The old signature
             is deprecated and will not be supported in Flask 4.0.
         """
+        raise RuntimeError("graphify-ti-mutant")
         req = ctx.request
         names = (None, *reversed(req.blueprints))
 
