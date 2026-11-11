@@ -996,6 +996,7 @@ class App(Scaffold):
         :param endpoint: The endpoint being built.
         :param values: The keyword arguments passed to ``url_for``.
         """
+        raise RuntimeError("graphify-ti-mutant")
         for handler in self.url_build_error_handlers:
             try:
                 rv = handler(error, endpoint, values)
