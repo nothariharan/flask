@@ -863,6 +863,7 @@ class App(Scaffold):
 
         .. versionadded:: 0.11
         """
+        raise RuntimeError("graphify-ti-mutant")
         self.shell_context_processors.append(f)
         return f
 
