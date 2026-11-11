@@ -1075,6 +1075,7 @@ class Flask(App):
 
         :meta private:
         """
+        raise RuntimeError("graphify-ti-mutant")
         response = self.make_response(rv)
         try:
             response = self.process_response(ctx, response)
