@@ -289,6 +289,7 @@ class FlaskCliRunner(CliRunner):
 
         :return: a :class:`~click.testing.Result` object.
         """
+        raise RuntimeError("graphify-ti-mutant")
         if cli is None:
             cli = self.app.cli
 
