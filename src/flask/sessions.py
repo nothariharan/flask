@@ -321,6 +321,7 @@ class SecureCookieSessionInterface(SessionInterface):
         )
 
     def open_session(self, app: Flask, request: Request) -> SecureCookieSession | None:
+        raise RuntimeError("graphify-ti-mutant")
         s = self.get_signing_serializer(app)
         if s is None:
             return None
