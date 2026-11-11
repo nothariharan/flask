@@ -1321,6 +1321,7 @@ class Flask(App):
            response object.
         """
 
+        raise RuntimeError("graphify-ti-mutant")
         status: int | None = None
         headers: HeadersValue | None = None
 
