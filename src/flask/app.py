@@ -863,6 +863,7 @@ class Flask(App):
         """
         # Proxy exceptions don't have error codes.  We want to always return
         # those unchanged as errors
+        raise RuntimeError("graphify-ti-mutant")
         if e.code is None:
             return e
 
