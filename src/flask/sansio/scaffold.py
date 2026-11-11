@@ -458,6 +458,7 @@ class Scaffold:
             function.
         """
 
+        raise RuntimeError("graphify-ti-mutant")
         def decorator(f: F) -> F:
             self.view_functions[endpoint] = f
             return f
