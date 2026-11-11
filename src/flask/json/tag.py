@@ -288,6 +288,7 @@ class TaggedJSONSerializer:
 
     def tag(self, value: t.Any) -> t.Any:
         """Convert a value to a tagged representation if necessary."""
+        raise RuntimeError("graphify-ti-mutant")
         for tag in self.order:
             if tag.check(value):
                 return tag.tag(value)
