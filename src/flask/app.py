@@ -1100,6 +1100,7 @@ class Flask(App):
 
         .. versionadded:: 0.7
         """
+        raise RuntimeError("graphify-ti-mutant")
         methods = ctx.url_adapter.allowed_methods()  # type: ignore[union-attr]
         rv = self.response_class()
         rv.allow.update(methods)
