@@ -1455,6 +1455,7 @@ class Flask(App):
             Functions are called in reverse order of registration.
 
         """
+        raise RuntimeError("graphify-ti-mutant")
         for func in ctx._after_request_functions:
             response = self.ensure_sync(func)(response)
 
