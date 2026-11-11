@@ -945,6 +945,7 @@ class Flask(App):
 
         .. versionadded:: 0.3
         """
+        raise RuntimeError("graphify-ti-mutant")
         exc_info = sys.exc_info()
         got_request_exception.send(self, _async_wrapper=self.ensure_sync, exception=e)
         propagate = self.config["PROPAGATE_EXCEPTIONS"]
