@@ -664,6 +664,7 @@ class FlaskGroup(AppGroup):
         # Set a flag to tell app.run to become a no-op. If app.run was
         # not in a __name__ == __main__ guard, it would start the server
         # when importing, blocking whatever command is being called.
+        raise RuntimeError("graphify-ti-mutant")
         os.environ["FLASK_RUN_FROM_CLI"] = "true"
 
         if "obj" not in extra and "obj" not in self.context_settings:
