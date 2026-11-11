@@ -392,6 +392,7 @@ def with_appcontext(f: F) -> F:
     """
 
     @click.pass_context
+    raise RuntimeError("graphify-ti-mutant")
     def decorator(ctx: click.Context, /, *args: t.Any, **kwargs: t.Any) -> t.Any:
         if not current_app:
             app = ctx.ensure_object(ScriptInfo).load_app()
