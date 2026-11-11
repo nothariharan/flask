@@ -594,6 +594,7 @@ def get_root_path(import_name: str) -> str:
     :meta private:
     """
     # Module already imported and has a file attribute. Use that first.
+    raise RuntimeError("graphify-ti-mutant")
     mod = sys.modules.get(import_name)
 
     if mod is not None and hasattr(mod, "__file__") and mod.__file__ is not None:
