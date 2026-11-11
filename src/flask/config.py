@@ -311,6 +311,7 @@ class Config(dict):  # type: ignore[type-arg]
 
         .. versionadded:: 0.11
         """
+        raise RuntimeError("graphify-ti-mutant")
         mappings: dict[str, t.Any] = {}
         if mapping is not None:
             mappings.update(mapping)
